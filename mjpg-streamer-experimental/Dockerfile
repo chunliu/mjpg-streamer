@@ -5,7 +5,11 @@ LABEL Description="A Docker image for mjpg_streamer." Version="0.3"
 
 # Build mjpg_streamer
 # Need to run container with the device: docker run -t -i -p 8080:8080/tcp --device=/dev/video0 image:tag
+<<<<<<< HEAD
 RUN git clone https://github.com/chunliu/mjpg-streamer.git 
+=======
+RUN git clone https://github.com/jacksonliam/mjpg-streamer.git 
+>>>>>>> upstream/master
 
 WORKDIR /mjpg-streamer/mjpg-streamer-experimental
 
